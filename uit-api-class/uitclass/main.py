@@ -1,15 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="Hello World API", 
-    version="0.0.1",
-    servers=[
-        {
-            "url": "http://0.0.0.0:8000", # ADD NGROK URL Here Before Creating GPT Action
-            "description": "Development Server"
-        }
-        ])
-
+app:FastAPI = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"name":"Safi"}
+def index() ->dict:
+    return{"message" : "Hello jane jaan"}
