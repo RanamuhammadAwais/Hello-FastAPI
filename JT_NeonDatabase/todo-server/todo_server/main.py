@@ -9,7 +9,7 @@ from todo_server import settings
 
 @todo_server.get("/")
 def helo():
-    return {"message": "Hello bahi"}
+    return {"message": "Hello bahvb mc ixcb"}
 
 
 @todo_server.get("/db")
